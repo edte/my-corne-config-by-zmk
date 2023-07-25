@@ -28,17 +28,17 @@
   combos {
     compatible = "zmk,combos";
 
-    new_combo {
+    search {
       bindings = <&search>;
       key-positions = <37 40>;
     };
 
-    new_combo {
+    copy {
       bindings = <&copy>;
       key-positions = <37 27>;
     };
 
-    new_combo {
+    parse {
       bindings = <&parse>;
       key-positions = <37 28>;
     };
