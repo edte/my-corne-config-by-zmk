@@ -38,7 +38,9 @@
       #binding-cells = <0>;
       bindings =
         <&macro_press>,
-        <&kp LCMD &kp KP_NUMBER_1>;
+        <&kp LCMD>,
+        <&macro_tap>,
+        <&kp KP_NUMBER_1>;
     };
     screen2: screen2 {
       compatible = "zmk,behavior-macro";
