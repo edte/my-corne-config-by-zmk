@@ -36,31 +36,41 @@
       compatible = "zmk,behavior-macro";
       label = "SCREEN1";
       #binding-cells = <0>;
-      bindings = <&kp LCMD &kp KP_NUMBER_1>;
+      bindings =
+        <&macro_press>,
+        <&kp LCMD &kp KP_NUMBER_1>;
     };
     screen2: screen2 {
       compatible = "zmk,behavior-macro";
       label = "SCREEN2";
       #binding-cells = <0>;
-      bindings = <&kp LCMD &kp KP_NUMBER_2>;
+      bindings =
+        <&macro_press>,
+        <&kp LCMD &kp KP_NUMBER_2>;
     };
     screen3: screen3 {
       compatible = "zmk,behavior-macro";
       label = "SCREEN3";
       #binding-cells = <0>;
-      bindings = <&kp LCMD &kp KP_NUMBER_3>;
+      bindings =
+        <&macro_press>,
+        <&kp LCMD &kp KP_NUMBER_3>;
     };
     screen4: screen4 {
       compatible = "zmk,behavior-macro";
       label = "SCREEN4";
       #binding-cells = <0>;
-      bindings = <&kp LCMD &kp KP_NUMBER_4>;
+      bindings =
+        <&macro_press>,
+        <&kp LCMD &kp KP_NUMBER_4>;
     };
     screen5: screen5 {
       compatible = "zmk,behavior-macro";
       label = "SCREEN5";
       #binding-cells = <0>;
-      bindings = <&kp LCMD &kp KP_NUMBER_5>;
+      bindings =
+        <&macro_press>,
+        <&kp LCMD &kp KP_NUMBER_5>;
     };
   };
 
