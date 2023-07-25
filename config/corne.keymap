@@ -48,7 +48,9 @@
       #binding-cells = <0>;
       bindings =
         <&macro_press>,
-        <&kp LCMD &kp KP_NUMBER_2>;
+        <&kp LCMD>,
+        <&macro_tap>,
+        <&kp KP_NUMBER_2>;
     };
     screen3: screen3 {
       compatible = "zmk,behavior-macro";
@@ -56,7 +58,9 @@
       #binding-cells = <0>;
       bindings =
         <&macro_press>,
-        <&kp LCMD &kp KP_NUMBER_3>;
+        <&kp LCMD>,
+        <&macro_tap>,
+        <&kp KP_NUMBER_3>;
     };
     screen4: screen4 {
       compatible = "zmk,behavior-macro";
@@ -64,7 +68,9 @@
       #binding-cells = <0>;
       bindings =
         <&macro_press>,
-        <&kp LCMD &kp KP_NUMBER_4>;
+        <&kp LCMD>,
+        <&macro_tap>,
+        <&kp KP_NUMBER_4>;
     };
     screen5: screen5 {
       compatible = "zmk,behavior-macro";
@@ -72,7 +78,9 @@
       #binding-cells = <0>;
       bindings =
         <&macro_press>,
-        <&kp LCMD &kp KP_NUMBER_5>;
+        <&kp LCMD>,
+        <&macro_tap>,
+        <&kp KP_NUMBER_5>;
     };
   };
 
