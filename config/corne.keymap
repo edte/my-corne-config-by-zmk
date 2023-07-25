@@ -37,12 +37,9 @@
       label = "SCREEN1";
       #binding-cells = <0>;
       bindings =
-        <&macro_press>,
-        <&kp LCMD>,
-        <&macro_tap>,
-        <&kp KP_NUMBER_1>,
-        <&macro_release>,
-        <&kp LCMD>;
+        <&macro_press &kp LCMD>,
+        <&macro_tap &kp KP_NUMBER_1>,
+        <&macro_release &kp LCMD>;
     };
     screen2: screen2 {
       compatible = "zmk,behavior-macro";
