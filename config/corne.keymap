@@ -60,6 +60,24 @@
         <&kp LCMD &kp KP_NUMBER_2>,
         <&macro_tap>;
     };
+    screen3: screen3 {
+      compatible = "zmk,behavior-macro";
+      label = "SCREEN3";
+      #binding-cells = <0>;
+      bindings = <&kp LCMD &kp KP_NUMBER_3>;
+    };
+    screen4: screen4 {
+      compatible = "zmk,behavior-macro";
+      label = "SCREEN4";
+      #binding-cells = <0>;
+      bindings = <&kp LCMD &kp KP_NUMBER_4>;
+    };
+    screen5: screen5 {
+      compatible = "zmk,behavior-macro";
+      label = "SCREEN5";
+      #binding-cells = <0>;
+      bindings = <&kp LCMD &kp KP_NUMBER_5>;
+    };
   };
 
   keymap {
@@ -76,10 +94,10 @@
 
     raise {
       bindings = <
-&trans    &kp N1    &kp N2  &kp N3  &kp N4  &kp N5      &kp N6    &kp N7    &kp N8     &kp N9         &kp N0       &trans
-&trans  &screen1  &screen2  &trans  &trans  &trans    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT    &kp PAGE_UP       &trans
-&trans    &trans    &trans  &trans  &trans  &trans      &trans    &trans  &kp HOME    &kp END  &kp PAGE_DOWN  &bootloader
-                            &trans  &trans  &trans      &trans     &mo 3    &trans
+&trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5      &kp N6    &kp N7    &kp N8     &kp N9         &kp N0       &trans
+&trans  &screen1  &screen2  &screen3  &screen4  &screen5    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT    &kp PAGE_UP       &trans
+&trans    &trans    &trans    &trans    &trans    &trans      &trans    &trans  &kp HOME    &kp END  &kp PAGE_DOWN  &bootloader
+                              &trans    &trans    &trans      &trans     &mo 3    &trans
       >;
     };
 
