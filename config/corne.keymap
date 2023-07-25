@@ -32,6 +32,16 @@
       bindings = <&search>;
       key-positions = <37 40>;
     };
+
+    new_combo {
+      bindings = <&copy>;
+      key-positions = <37 27>;
+    };
+
+    new_combo {
+      bindings = <&parse>;
+      key-positions = <37 28>;
+    };
   };
 
   macros {
@@ -104,6 +114,30 @@
         <&kp LCMD>,
         <&macro_tap>,
         <&kp SPACE>,
+        <&macro_release>,
+        <&kp LCMD>;
+    };
+    copy: copy {
+      compatible = "zmk,behavior-macro";
+      label = "COPY";
+      #binding-cells = <0>;
+      bindings =
+        <&macro_press>,
+        <&kp LCMD>,
+        <&macro_tap>,
+        <&kp C>,
+        <&macro_release>,
+        <&kp LCMD>;
+    };
+    parse: parse {
+      compatible = "zmk,behavior-macro";
+      label = "PARSE";
+      #binding-cells = <0>;
+      bindings =
+        <&macro_press>,
+        <&kp LCMD>,
+        <&macro_tap>,
+        <&kp V>,
         <&macro_release>,
         <&kp LCMD>;
     };
