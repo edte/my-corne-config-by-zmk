@@ -41,7 +41,8 @@
         <&kp LCMD>,
         <&macro_tap>,
         <&kp KP_NUMBER_1>,
-        <&macro_release>;
+        <&macro_release>,
+        <&kp LCMD>;
     };
     screen2: screen2 {
       compatible = "zmk,behavior-macro";
@@ -52,7 +53,8 @@
         <&kp LCMD>,
         <&macro_tap>,
         <&kp KP_NUMBER_2>,
-        <&macro_release>;
+        <&macro_release>,
+        <&kp LCMD>;
     };
     screen3: screen3 {
       compatible = "zmk,behavior-macro";
@@ -63,7 +65,8 @@
         <&kp LCMD>,
         <&macro_tap>,
         <&kp KP_NUMBER_3>,
-        <&macro_release>;
+        <&macro_release>,
+        <&kp LCMD>;
     };
     screen4: screen4 {
       compatible = "zmk,behavior-macro";
@@ -74,7 +77,8 @@
         <&kp LCMD>,
         <&macro_tap>,
         <&kp KP_NUMBER_4>,
-        <&macro_release>;
+        <&macro_release>,
+        <&kp LCMD>;
     };
     screen5: screen5 {
       compatible = "zmk,behavior-macro";
@@ -85,7 +89,8 @@
         <&kp LCMD>,
         <&macro_tap>,
         <&kp KP_NUMBER_5>,
-        <&macro_release>;
+        <&macro_release>,
+        <&kp LCMD>;
     };
   };
 
