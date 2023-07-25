@@ -42,7 +42,15 @@
         <&macro_tap>,
         <&kp Z &kp M &kp K>,
         <&macro_release>,
-        <&kp LSHFT>;
+        <&kp LSHFT &kp>;
+    };
+    screen1: screen1 {
+      compatible = "zmk,behavior-macro";
+      label = "SCREEN1";
+      #binding-cells = <0>;
+      bindings =
+        <&kp LCMD &kp KP_NUMBER_1>,
+        <&macro_press>;
     };
   };
 
