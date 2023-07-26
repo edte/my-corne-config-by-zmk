@@ -27,16 +27,6 @@
 
   combos {
     compatible = "zmk,combos";
-
-    copy {
-      bindings = <&copy>;
-      key-positions = <37 27>;
-    };
-
-    parse {
-      bindings = <&parse>;
-      key-positions = <37 28>;
-    };
   };
 
   macros {
