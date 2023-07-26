@@ -154,19 +154,19 @@
 
     raise {
       bindings = <
-&trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5      &kp N6    &kp N7    &kp N8     &kp N9         &kp N0       &trans
-&trans  &screen1  &screen2  &screen3  &screen4  &screen5    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT    &kp PAGE_UP       &trans
-&trans    &trans      &cut     &copy    &parse    &trans      &trans    &trans  &kp HOME    &kp END  &kp PAGE_DOWN  &bootloader
-                              &trans    &trans    &trans      &trans   &search    &trans
+&trans    &kp N1    &kp N2       &kp N3    &kp N4    &kp N5      &kp N6    &kp N7    &kp N8     &kp N9         &kp N0  &trans
+&trans  &screen1  &screen2     &screen3  &screen4  &screen5    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT    &kp PAGE_UP  &trans
+ &none    &trans      &cut        &copy    &parse    &trans      &trans    &trans  &kp HOME    &kp END  &kp PAGE_DOWN   &none
+                            &bootloader    &trans    &trans      &trans   &search    &trans
       >;
     };
 
     lower {
       bindings = <
-      &none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR  &kp GRAVE
-     &trans    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL              &kp LBKT               &kp RBKT  &kp BSLH   &kp PIPE
-&bootloader    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS              &kp LBRC               &kp RBRC     &none      &none
-                                 &trans     &none     &trans       &trans     &trans                &trans
+ &none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR  &kp GRAVE
+&trans    &trans  &trans    &trans    &trans     &trans    &kp MINUS  &kp EQUAL              &kp LBKT               &kp RBKT  &kp BSLH   &kp PIPE
+ &none    &trans  &trans    &trans    &trans     &trans    &kp UNDER   &kp PLUS              &kp LBRC               &kp RBRC     &none      &none
+                            &trans     &none     &trans       &trans     &trans           &bootloader
       >;
     };
   };
