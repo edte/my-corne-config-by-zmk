@@ -155,10 +155,10 @@
 
     raise {
       bindings = <
-&trans    &kp N1    &kp N2       &kp N3    &kp N4    &kp N5      &kp N6    &kp N7    &kp N8     &kp N9         &kp N0  &trans
-&trans  &screen1  &screen2     &screen3  &screen4  &screen5    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT    &kp PAGE_UP  &trans
- &mo 3    &trans      &cut        &copy    &parse    &trans      &trans    &trans  &kp HOME    &kp END  &kp PAGE_DOWN   &none
-                            &bootloader    &trans    &trans      &trans   &search    &trans
+&trans    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5      &kp N6    &kp N7    &kp N8     &kp N9         &kp N0  &trans
+&trans  &screen1  &screen2  &screen3  &screen4  &screen5    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT    &kp PAGE_UP  &trans
+ &mo 3    &trans      &cut     &copy    &parse    &trans      &trans    &trans  &kp HOME    &kp END  &kp PAGE_DOWN   &none
+                               &none    &trans    &trans      &trans   &search    &trans
       >;
     };
 
