@@ -20,9 +20,7 @@
       tapping-term-ms = <150>;
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
-      bindings =
-        <&kp>,
-        <&kp>;
+      bindings = <&kp>, <&kp>;
     };
   };
 
@@ -146,54 +144,54 @@
 
     base {
       bindings = <
-  &kp TAB  &kp Q  &kp W     &kp E        &kp R       &kp T      &kp Y        &kp U          &kp I    &kp O     &kp P   &kp GRAVE
-&kp LCTRL  &kp A  &kp S     &kp D        &kp F       &kp G      &kp H        &kp J          &kp K    &kp L  &kp SEMI    &kp APOS
-&kp LSHFT  &kp Z  &kp X     &kp C        &kp V       &kp B      &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                         &kp LCMD  &lt 1 SPACE  &kp ESCAPE    &kp RET  &lt 2 SPACE  &kp BACKSPACE
+&kp TAB    &kp Q         &kp W  &kp E     &kp R        &kp T         &kp Y    &kp U        &kp I          &kp O    &kp P     &kp GRAVE
+&kp LCTRL  &mt LSHIFT A  &kp S  &kp D     &kp F        &kp G         &kp H    &kp J        &kp K          &kp L    &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z         &kp X  &kp C     &kp V        &kp B         &kp N    &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp RSHIFT
+                                &kp LCMD  &lt 1 SPACE  &kp ESCAPE    &kp RET  &lt 2 SPACE  &kp BACKSPACE
       >;
     };
 
     raise {
       bindings = <
-&trans    &kp N1    &kp N2    &kp N3       &kp N4    &kp N5      &kp N6    &kp N7    &kp N8     &kp N9         &kp N0  &trans
-&trans  &screen1  &screen2  &screen3     &screen4  &screen5    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT    &kp PAGE_UP  &trans
- &mo 3    &trans      &cut     &copy       &parse    &trans      &trans    &trans  &kp HOME    &kp END  &kp PAGE_DOWN   &none
-                               &none  &key_repeat    &trans      &trans   &search    &trans
+&trans  &kp N1    &kp N2    &kp N3    &kp N4       &kp N5      &kp N6    &kp N7    &kp N8    &kp N9     &kp N0         &trans
+&trans  &screen1  &screen2  &screen3  &screen4     &screen5    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp PAGE_UP    &trans
+&mo 3   &trans    &cut      &copy     &parse       &trans      &trans    &trans    &kp HOME  &kp END    &kp PAGE_DOWN  &none
+                            &none     &key_repeat  &trans      &trans    &search   &trans
       >;
     };
 
     lower {
       bindings = <
- &none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR  &kp GRAVE
-&trans    &trans  &trans    &trans    &trans     &trans    &kp MINUS    &kp EQUAL              &kp LBKT               &kp RBKT  &kp BSLH   &kp PIPE
- &none    &trans  &trans    &trans    &trans     &trans    &kp UNDER     &kp PLUS              &kp LBRC               &kp RBRC     &none      &mo 4
-                            &trans     &none     &trans       &trans  &key_repeat           &bootloader
+&none   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp STAR  &kp GRAVE
+&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL    &kp LBKT              &kp RBKT               &kp BSLH  &kp PIPE
+&none   &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS     &kp LBRC              &kp RBRC               &none     &mo 4
+                          &trans    &none     &trans       &trans     &key_repeat  &bootloader
       >;
     };
 
     layer_3 {
       bindings = <
- &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kt F9  &kp F10  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans    &mo 5
+&none   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kt F9  &kp F10  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &mo 5
                         &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
 
     layer_4 {
       bindings = <
- &none  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &none
+&none   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
- &mo 6  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&mo 6   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
 
     layer_5 {
       bindings = <
-&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &none
-     &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-     &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &none
+&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                              &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
@@ -201,8 +199,8 @@
     layer_6 {
       bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
       >;
     };
